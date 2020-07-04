@@ -1,0 +1,21 @@
+.star{
+    color: #d1cb00;
+    font-size: 1vh;
+}
+
+.card-img, .card-img-top{
+    height: 30vh;
+}
+
+.star-rating-container, .star-rating-container .star-list
+{
+    display: inline;
+}
+
+.star-list .star{
+    cursor: inherit;
+}
+
+.star-rating-container{
+    vertical-align: middle;
+}
