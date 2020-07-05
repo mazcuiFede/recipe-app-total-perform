@@ -18,7 +18,13 @@ class Ingredients extends Component {
     }
     
     render() {
-        return (
+        let { servings, ingredients } = this.state
+
+        if (isNaN(parseInt(servings)))
+            servings = 1
+        
+            return (
+            
             <div>
                 <Card.Text>
                     Servings:
@@ -27,7 +33,7 @@ class Ingredients extends Component {
                 <Card.Body> 
                 <Card.Text>To make this recipe you will need:</Card.Text>
                     <ul>
-                        { this.state.ingredients.map((recipe) => <li key={recipe.name}>{`${recipe.quantity * this.state.servings} ${recipe.unit} of ${recipe.name}`}</li>)}
+                        { ingredients.map((recipe) => <li key={recipe.name}>{`${recipe.quantity * servings} ${recipe.unit} of ${recipe.name}`}</li>)}
                     </ul>
                 </Card.Body>
             </div>

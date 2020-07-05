@@ -16,7 +16,7 @@ function App() {
                 <Col xs={12}>
                   <div className="jumbotron">
                     <img src={logo} className="App-logo" alt="logo" />
-                    <h1>Welcome to <b>Recipe App</b></h1>
+                    <h1>Welcome to <b className="black">Recipe App</b></h1>
                     <p>All you need is a good recipe!</p>
                   </div>
                 </Col>
